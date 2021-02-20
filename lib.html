@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Compating different devices and applicatons -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<!-- Title bar -->
+	<title>Library &nbsp;|&nbsp; Simp</title>
+	<link rel = "icon" type = "image/png" href = "stock/logo.png">
+
+	<!-- Style sheet -->
+	<link rel="stylesheet" type="text/css" href="z-style.css" />
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Grenze Gotisch|Raleway|PT Sans Narrow|Dosis|Staatliches|Lobster|Abel|Overpass|Abril Fatface|Acme|Fira Sans Condensed|Oswald|Open Sans|Rowdies|Anton|Righteous|Alfa Slab One|Francois One|Archivo Black|Passion One|Oleo Script|Monoton|Candal|Carter One|Black Ops One|Racing Sans One|Palanquin Dark|Rakkas|Skranji|Timmana|Styles|Plaster|Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+
+	<!-- Adobe fonts -->
+	<link rel="stylesheet" href="https://use.typekit.net/wur3dcn.css">
+
+	<!-- jQuery files include -->
+	<script src="jQuery\jQuery compressed.js"></script>
+	<script src="jQuery\jquery-ui.js"></script>
+	<script src="jQuery\jQuery ease1.js"></script>
+	<script src="jQuery\jQuery ease2.js"></script>
+	<script src="tt.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="ff.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Javascript file -->
+
+	<script type="text/javascript" src="z-effect.js"></script>
+</head>
+<body class="current-page" id="lib">
+	<div id="navbar">
+		<img src="stock/logo.png" id="navbar-logo">
+		<p id="navbar-simp">Simp</p>
+
+		<div id="navbar-profile">
+			<p id="navbar-arrow"><i id="navbar-arrow-control"></i></p>
+			<img src="stock/dp.jpeg" id="navbar-dp">
+		</div>
+		<div id="navbar-notify"><img src="stock/icon-notify.png" id="navbar-notify-icon"></div>
+
+		<a href="tt.html" class="navbar-menus" id="navbar-tt"><p class="navbar-menus-text" id="navbar-tt-text">Time table</p><div class="navbar-menus-border" id="navbar-tt-border"></div></a>
+		<a href="attend.html" class="navbar-menus" id="navbar-attend"><p class="navbar-menus-text" id="navbar-attend-text">Attendence</p><div class="navbar-menus-border" id="navbar-attend-border"></div></a>
+		<a href="lib.html" class="navbar-menus" id="navbar-lib"><p class="navbar-menus-text" id="navbar-lib-text">Library</p><div class="navbar-menus-border" id="navbar-lib-border"></div></a>
+		<a href="tests.html" class="navbar-menus" id="navbar-tests"><p class="navbar-menus-text" id="navbar-tests-text">Tests</p><div class="navbar-menus-border" id="navbar-tests-border"></div></a>
+		<a href="home.html" class="navbar-menus" id="navbar-home"><p class="navbar-menus-text" id="navbar-home-text">Home</p><div class="navbar-menus-border" id="navbar-home-border"></div></a>		
+
+		<div id="navbar-menubut">
+  			<div class="bar1"></div>
+  			<div class="bar2"></div>
+  			<div class="bar3"></div>
+		</div>
+		<div id="navbar-menubut-2">
+  			<div class="bar1"></div>
+  			<div class="bar2"></div>
+  			<div class="bar3"></div>
+		</div>
+	</div>
+
+	<div id="side-bar">		
+		<div id="side-profile-bar">
+			<a href="profile.html" class="side-profile-bar-texts">Your profile</a>
+			<a href="login.html" class="side-profile-bar-texts">Logout</a>
+		</div>
+		<div id="side-menu-bar">
+			<a href="home.html" class="side-menu-bar-texts">Home</a>
+			<a href="tests.html" class="side-menu-bar-texts">Tests</a>
+			<a href="lib.html" class="side-menu-bar-texts">Library</a>
+			<a href="attend.html" class="side-menu-bar-texts">Attendence</a>
+			<a href="tt.html" class="side-menu-bar-texts">Time table</a>
+		</div>
+		<div id="side-notify-bar">
+			<p class="side-notify-bar-texts">No unread Notifications</p>
+		</div>
+	</div>
+
+
+
+	<div id="test-div">
+		<div class="search-wrapper ">
+        <div class="input-holder ">
+            <input type="text " class="search-input " placeholder="Type to search " />
+            <button class="search-icon " onclick="searchToggle(this, event); ">
+                <span></span>
+            </button>
+        </div>
+        <span class="close " onclick="searchToggle(this, event); "></span>
+    </div>
+		<div class="text1">
+			<h1 id="library-heading"></h1>
+
+		</div>
+		<div class=space id="library-books-list"></div>
+
+  </div>
+	<div class="col1">
+	<h2>Categories</h2>
+
+<button type="button" class="collapsible">Computer Science</button>
+<div class="content">
+  <p>Lollllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll\(0-0)/\(0-0)/\(0-0)/\(0-0)/.</p>
+</div>
+<button type="button" class="collapsible">Electrical</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Data Science</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+</div>
+      
+</body>
+</html>
+<script>
+	const yearTextMap = {
+		1: '1st',
+		2: '2nd',
+		3: '3rd'
+	};
+	let year = 1;
+	document.getElementById("library-heading").innerHTML = `Recommended Books for ${yearTextMap[year]} Year Students`;
+	const books = {
+			1: [
+				{ name: 'DBMS1', available: 'Yes', author: 'Nelson', image: 'stock/Books.jpg' },
+				{ name: 'DBMS2', available: 'Yes', author: 'Nelson', image: 'stock/book1.jfif' },
+				{ name: 'DBMS2', available: 'Yes', author: 'Nelson', image: 'stock/book2.jpg' },
+				{ name: 'DBMS3', available: 'Yes', author: 'Nelson', image: 'stock/book3.jpg' }
+			],
+			2: [
+				{ name: 'DBMS', available: true, author: 'Nelson' }
+			]
+	};
+	const booksForYear = books[year];
+
+	let booksListStr = '<ul>';
+	for (let i = 0; i < booksForYear.length; i++) {
+		let book = booksForYear[i];
+		booksListStr += `
+			<li> <div class=booktext id=rcorners3> <img src="${book.image}" id=photo>
+				<ul>
+					<li><b>Name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: </b>${book.name}</li>
+					</br>
+					<li><b>Author &nbsp&nbsp&nbsp&nbsp: </b>${book.author}</li>
+					</br>
+					<li><b>Available : </b>${book.available}</li>
+					</br>
+				</ul>
+			</div>
+		</li>
+		`
+	}
+	booksListStr += '</ul>';
+	document.getElementById("library-books-list").innerHTML = booksListStr;
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script> 
